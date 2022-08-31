@@ -20,7 +20,7 @@ PersonList* suppr(PersonList *list){
     if (list != NULL){
         PersonList* res = list -> next;
         free(list);
-        return result;
+        return res;
     }
     else {
         return NULL;
