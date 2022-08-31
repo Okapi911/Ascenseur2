@@ -27,7 +27,7 @@ PersonList* exitElevator(Elevator *e){
             if(e->persons->next->next != NULL){
                 if (e->persons->next->next->person->dest == e->currentFloor){
                     res = insert(e->persons->next->next->person, res);
-                    e->persons->next->next = suppr(e->persons->next->next)
+                    e->persons->next->next = suppr(e->persons->next->next);
                 }
             }
             if (e->persons->next->person->dest == e->currentFloor){
