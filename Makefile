@@ -12,7 +12,6 @@ person.o : person.c person.h
 
 elev : main.o elevator.o person.o 
 	gcc -g -o elev main.o elevator.o person.o -lncurses
-	gdb elev
 
 run : elev
 	./elev
