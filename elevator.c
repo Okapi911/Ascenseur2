@@ -57,8 +57,8 @@ void stepElevator(Building *b){
         if(b->elevator->persons != NULL){
             exitElevator(b->elevator); 
         }
-        if(b->waitingLists(b->elevator->currentFloor) != NULL){
-            b->waitingLists(b->elevator->currentFloor) = enterElevator(b->elevator,b->waitingLists(b->elevator->currentFloor));
+        if(b->waitingLists[b->elevator->currentFloor] != NULL){
+            b->waitingLists[b->elevator->currentFloor] = enterElevator(b->elevator,b->waitingLists[b->elevator->currentFloor]);
         }    
     }
     else {
