@@ -9,4 +9,4 @@ run : elev
 	./elev
 
 clean :
-	rm -f main *.o
+	rm -f elev *.o
