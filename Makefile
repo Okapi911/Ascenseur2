@@ -18,3 +18,6 @@ run : elev
 
 clean :
 	rm -f elev *.o
+
+debug : elev
+	gdb elev
